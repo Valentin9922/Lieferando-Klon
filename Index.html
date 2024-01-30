@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="src/styles.css">
+
+    <script src="src/scrips.js"></script>
+</head>
+<body onload="loadFood()">
+
+    <div class="header">
+        <div>
+        <img class="burgerlogo" src="img/Lieferandoo.png">
+        </div>
+        <div>
+            <div><h2 class="street-font"> 45731 Waltrop </h2></div>
+        </div>
+        <div class="burger-button-langue">
+            <img class="german-logo" src="img/Deutsch.png">
+            <img class="burger-button" src="img/burger-button.gif">
+        </div>
+    </div>
+
+
+<div>
+ <div class="main-container" id="main-container" >
+    
+    
+    <div class="header-img">
+        
+    </div>
+    <div class="rating-container">
+        <div class="rating-stars">
+        <h2 class="restaurant-name">Burger Restaurant</h2>
+        <div class="rating-font">
+        <img class="rating" src="img/Bewertung.png">
+         <span class="rating-font">(1,5k Bewertungen)</span>
+         </div>
+        </div>
+
+        <div>
+            <img class="info-icon" src="img/info-logo.png">
+            <img class="heart-icon" src="img/herz-logo.png">
+        </div>
+    </div>
+        
+    
+
+   <!--Hier die Menüs-->
+   <div onload="loadFood()" class="fav-food">
+    <h3 class="fav-food-font"><b>Beliebte Gerichte</b></h3>
+    </div>
+    <div id="foods" class="menus">
+      
+    </div>
+ 
+</div>
+
+
+            <div id="shopping-card" class="shopping-cart">
+                <div class="shopping-cart-h2-container">
+                    
+                <h2 class="shopping-cart-h2">Warenkorb</h1>
+                    <div class="basket-overlay d-none" id="basketOverlay">
+
+                        <img class="shopping-bag" src="img/shopping_bag.png">
+                        <h2>Fülle deinen Warenkorb</h2>
+                        <p>Füge einige leckere Gerichte aus der Speisekarte<br>
+                            hinzu und bestelle dein Essen
+                        </p>
+
+
+                    </div>
+                    <img id="closeBasket" onclick="closeBasket()" class="close-basket" src="img/delete.png">
+                </div>
+                    
+                <div id="shopping-card-products" class="shopping-card-products">
+
+                </div>
+                <div class="shopping-card-endprices-container" id="shopping-cart-endprices">
+
+
+                </div>
+                <div id="payOrder" class="d-none">
+                    <div>
+                    <table id="min-to-pay" class="min-to-pay">
+                        <tr>
+                            <td>Benötigter Betrag, um den Mindestbestellwert zu erreichen </td>
+                            <td>20€</td>
+                        </tr>
+                    
+                    </table>
+                    </div>
+                    <div class="paybtn-container">
+                    <button id="paybtn" class="pay-btn"><b>Bezahlen</b></button>
+                    </div>
+                </div>
+                    
+            </div>
+
+            <div id="openBasket" class="basket-container">
+                <button onclick="openbasket()" class="open-basket-button"><b>Warenkorb</b></button>
+                </div>
+                </body>
+
+</div>
+    
+</body>
+</html>

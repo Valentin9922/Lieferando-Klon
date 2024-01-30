@@ -1,0 +1,405 @@
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:400;
+}
+
+
+
+.shopping-cart{
+    position: fixed;
+    top:65px;
+    right:0px;
+    height: 100%;
+    width: 20%;
+    box-shadow: -2px 0px 2px 0px rgb(221 221 221);
+    transition: all ease-in-out 150ms;
+    font-size: 13px;
+}
+.shopping-cart-h2{
+    text-align: center;
+    color: #0a3847;
+    border-bottom: 1px solid lightgray;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0;
+}
+
+.basket-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.shopping-bag{
+    width: 50px;
+
+}
+
+.shopping-cart-text{
+    padding-top: 100px;
+}
+
+.shopping-card-products{
+    
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.cart-product{
+    color: #0a3847;
+    border-bottom: 1px solid lightgray;
+    margin: 10px;
+}
+
+.cart-product-and-price{
+    padding-bottom: 10px;
+    font-size:1§px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-product-buttons{
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    color:blue;
+    padding-bottom: 10px;
+}
+
+.plus-minus-button{
+    color:#125fca;
+    background-color: #ebebeb00;
+    border: solid 0.2px lightgray;
+    width: 20px;
+    height: 20px;
+}
+
+.plus-minus-button:hover{
+    transition: 0.3s;
+    border: solid 0.2px #125fca;
+    cursor: pointer;
+}
+
+.shopping-card-endprices-container{ 
+    margin: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    line-height: 18px;
+}
+
+.addToBasket{
+    color: #125fca;
+    background-color:white;
+    border: 1px solid lightgray;
+    font-size: 25px;
+    border-top: none;
+    border-right: none;
+    width: 35px;
+    height: 35px;
+}
+
+.addToBasket:hover{
+    border: 1px solid #125fca;
+    cursor: pointer;
+}
+
+.min-to-pay{
+    margin: 30px 10px 10px 10px;
+    font-size: 10px;
+    color: #0a3847;
+    padding: 10px;
+    background-color: rgba(253, 212, 115, 0.596) ;
+}
+
+.paybtn-container{
+    margin: 10px;
+    
+
+}
+
+.pay-btn{
+    background-color: #ebebeb;;
+    color: #666;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+h3{
+    margin: 0px;  
+}
+
+.header{
+    background-color: #fb7e24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.street-font{
+    color: white;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+.burgerlogo{
+    width: 120px;
+    height: 37px;
+    margin-left: 20px;
+}
+
+.german-logo{
+    width: 17px;
+    height:17px;
+    border: solid px white;
+    border-radius: 20px;
+    margin-bottom: 5px;   
+}
+
+.burger-button{
+    width: 27px;
+    height: 27px;
+    margin-right: 20px; 
+    cursor: pointer;
+}
+
+
+.header-img{
+    background-image: url(img/header_img.jpg);
+    object-fit: cover;
+    width: 80%;
+    height: 200px;
+    background-position-y: -900px;
+    background-position-x: -270px;
+}
+
+.fav-food{
+    width: 80%;
+}
+
+.fav-food-font{
+    background-color: rgba(246, 224, 224, 0.411);
+    font-size: 14px;
+    padding: 15px 0px 15px 10px;
+    margin: 5px 15px 0px 15px; 
+}
+
+.rating-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.restaurant-name{
+    color: rgb(62, 49, 80);
+    margin: 0px 50px 0px 18px;
+    font-size: 18px;   
+}
+
+.rating{
+    width: 100px;
+    height: 20px;
+    margin: 0px 0px 0px 10px;    
+}
+
+.rating-font{
+    display: flex;
+    align-items: center;
+    color: #fb7e24;
+    text-decoration: underline;
+    font-size: 13px;      
+}
+
+.info-icon{
+    width: 15px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin: 0px;
+}
+
+.info-icon:hover{
+    transition: 0.3s;
+    border: 1px solid rgba(70, 70, 207, 0.65);
+    cursor: pointer;
+    
+}
+
+
+
+.heart-icon{
+    width: 15px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.heart-icon:hover{
+    transition: 0.3s;
+    border: 1px solid rgba(241, 120, 22, 0.924);
+    cursor: pointer;
+}
+
+.food-container{
+    width: 80%;
+}
+
+.food-border{
+    
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px lightgray;
+    margin: 5px 15px 0px 15px;
+}
+
+.food-border:hover{
+    transition: 0.3s;
+    border: solid 1px #125fca;
+    
+}
+
+.container-font{
+    font-weight: 600;
+    color: #0a3847;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;    
+}
+
+.container-price{
+    font-size: 14px;
+    color: #fb7e24;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.container-text{
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.menus{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.menu-container{
+    display: flex;
+}
+
+p{
+    text-align: center; 
+}
+
+
+
+.open-basket-button{
+    padding: 13px 0px 13px 10px;
+    width: 100%;
+    background-color: #125fca;
+    color:white;
+    border: none;
+    display: none;
+    position:fixed;
+    bottom:5px;
+    
+    border: 16px solid white;
+}
+
+.open-basket-button:hover{
+    transition: 0.3s;
+    background-color: #257af1;
+    cursor: pointer;
+}
+
+.close-basket{
+    width: 0px;
+}
+
+.d-none{
+    display: none;
+}
+
+
+@media(max-width:800px) {
+
+.shopping-cart{
+    background-color: white;
+    top:50px;
+    position: fixed;
+    width:100%;
+    height: 100%;
+    z-index: -2; 
+}
+
+.main-container{
+   position: relative;
+   z-index: 0;
+   background-color: white;
+}
+
+.close-basket{
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+.cart-product-buttons{
+    padding: 10px 60px 10px 60px; 
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+}
+
+.shopping-cart-h2-container{
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-container {
+    width: 100%;
+}
+
+.fav-food {
+    width: 100%;
+}
+
+.food-container{
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;}
+
+.open-basket-button{
+    display: block;
+    z-index: 10;
+}
+
+
+.menus{
+    margin-bottom: 70px;
+}
+
+
+}
